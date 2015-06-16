@@ -4,8 +4,9 @@ server that wraps up a simple integer to string map.
 
 ## Installation
 Executables have been pre-built for most platforms.
-Please download and unzip the one suitable for you from the
-[downloads](https://github.com/seeemilyplay/diy-dist-db-node/blob/master/downloads/snapshot/downloads.md).
+You can find them on the 
+[downloads page](https://github.com/seeemilyplay/diy-dist-db-node/blob/master/downloads/snapshot/downloads.md). From this page find the distribution relevant to you, follow it's link, and then click on GitHub "Raw" button to download. Then unzip to get
+the executable.
 
 ## Running
 Call the program passing it a free local PORT.
