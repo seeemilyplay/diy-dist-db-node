@@ -3,24 +3,24 @@ single node of a diy distributed database. It's a RESTful API
 server that wraps up a simple integer to string map.
 
 ## Installation
-This program was written in Go, especially to take advantage of
-it's easy cross compilation. Please download and install the
-suitable version for yourself from the downloads page.
+Executables have been pre-built for most platforms.
+Please download and unzip the one suitable for you from the
+(downloads)[https://github.com/seeemilyplay/diy-dist-db-node/blob/master/downloads/snapshot/downloads.md].
 
 ## Running
-Once installed, call the program to run, passing it a local PORT.
+Call the program passing it a free local PORT.
 
     diy-dist-db-node <PORT>
 
 ## Adding things
-Add things to the map with a HTTP POST. For example:
+Add things to the map with HTTP POST. For example:
 
     curl -i -H 'Content-Type: application/json' \
          -d '{"Id": 3, "Value": "foo"}' \
          http://localhost:<PORT>/things
 
 ## Querying things
-To query for a particular thing in the map, use a HTTP GET
+To query for a particular thing in the map use an HTTP GET
 request with the thing's id number.
 
     curl -i http://localhost:<PORT>/things/3 
